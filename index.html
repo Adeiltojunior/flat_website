@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flat à Venda - Oportunidade Única!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Flat Exclusivo à Venda</h1>
+        <p>Aproveite esta oportunidade única de morar em um lugar incrível!</p>
+    </header>
+
+    <main>
+        <section id="gallery">
+            <h2>Galeria de Fotos</h2>
+            <div class="image-grid">
+                <div class="image-item" onclick="openModal('images/living_room_1.jpeg')">
+                    <img src="images/living_room_1.jpeg" alt="Sala de Estar">
+                    <div class="image-overlay">
+                        <h3>Sala de Estar</h3>
+                        <p>Ambiente aconchegante com sofá-cama e TV</p>
+                    </div>
+                </div>
+                <div class="image-item" onclick="openModal('images/bedroom_1.jpeg')">
+                    <img src="images/bedroom_1.jpeg" alt="Quarto">
+                    <div class="image-overlay">
+                        <h3>Quarto</h3>
+                        <p>Quarto confortável com cama de casal</p>
+                    </div>
+                </div>
+                <div class="image-item" onclick="openModal('images/kitchen_1.jpeg')">
+                    <img src="images/kitchen_1.jpeg" alt="Cozinha">
+                    <div class="image-overlay">
+                        <h3>Cozinha</h3>
+                        <p>Cozinha completa e moderna</p>
+                    </div>
+                </div>
+                <div class="image-item" onclick="openModal('images/bathroom_1.jpeg')">
+                    <img src="images/bathroom_1.jpeg" alt="Banheiro">
+                    <div class="image-overlay">
+                        <h3>Banheiro</h3>
+                        <p>Banheiro moderno com azulejos decorativos</p>
+                    </div>
+                </div>
+                <div class="image-item" onclick="openModal('images/pool_area_1.jpeg')">
+                    <img src="images/pool_area_1.jpeg" alt="Área da Piscina">
+                    <div class="image-overlay">
+                        <h3>Área da Piscina</h3>
+                        <p>Vista das piscinas e área de lazer</p>
+                    </div>
+                </div>
+                <div class="image-item" onclick="openModal('images/balcony_1.jpeg')">
+                    <img src="images/balcony_1.jpeg" alt="Varanda">
+                    <div class="image-overlay">
+                        <h3>Varanda</h3>
+                        <p>Varanda com vista para as piscinas</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="details">
+            <h2>Detalhes do Flat</h2>
+            <p><strong>Preço:</strong> R$ 390.000,00</p>
+            <p><strong>Descrição:</strong> Este flat moderno e aconchegante oferece tudo o que você precisa para viver com conforto e estilo. Com ambientes bem planejados, cozinha equipada, quarto confortável e uma área externa com piscinas, é perfeito para quem busca qualidade de vida e lazer. Localizado em uma área privilegiada, próximo a diversas comodidades.</p>
+            <p><strong>Comodidades:</strong></p>
+            <ul>
+                <li>Cozinha completa</li>
+                <li>Quarto com cama de casal</li>
+                <li>Banheiro moderno</li>
+                <li>Área de estar com sofá-cama</li>
+                <li>Varanda com vista para as piscinas</li>
+                <li>Acesso a piscinas e áreas de lazer</li>
+                <li>Ar condicionado</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Interessado?</h2>
+            <button id="whatsapp-button">Quero Comprar!</button>
+        </section>
+    </main>
+
+    <!-- Modal for image gallery -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modalImage" src="" alt="">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Flat à Venda. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
